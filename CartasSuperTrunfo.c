@@ -16,13 +16,13 @@ int main() {
     scanf("%c", &Estado);
 
     printf("Digite o Código da Carta: \n");
-    sacnf("%s", &Carta);
+    scanf("%s", &Carta);
 
     printf("Digite o Nome da Cidade: \n");
-    sacnf("%s", &Cidade);
+    scanf("%s", &Cidade);
 
     printf("Digite a população total: \n");
-    sacnf("%d", &Populacao);
+    scanf("%d", &Populacao);
 
     printf("Digite a Área por km: \n");
     scanf("%f", &Area);
@@ -35,9 +35,10 @@ int main() {
 
     //impressão dos resultados no terminal
 
-    printf("")
+    printf("Estado: %c \n - Código da Carta: %s \n ", Estado, Carta);
+    printf("Nome da Cidade: %s \n - População: %d \n", Cidade, Populacao);
+    printf("Área por km: %f \n - PIB: %f \n", Area, PIB);
+    printf("Pontos Turístico: %d \n", Turismo);
 
-
-    
     return 0;
 }
