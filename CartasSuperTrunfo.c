@@ -5,8 +5,8 @@ int main() {
     //Declaração de variaveis
    
     char Estado1, Estado2;
-    char Carta1[3], Carta2[3];
-    char Cidade1[6], Cidade2[9];
+    char Carta1[30], Carta2[30];
+    char Cidade1[30], Cidade2[30];
     int Populacao1, Populacao2;
     float Area1, Area2;
     float PIB1, PIB2;
@@ -18,10 +18,10 @@ int main() {
     scanf("%c", &Estado1);
 
     printf("Digite o Código da Carta: \n");
-    scanf("%s", &Carta1);
+    scanf("%s", Carta1);
 
     printf("Digite o Nome da Cidade: \n");
-    scanf("%s", &Cidade1);
+    scanf("%s", Cidade1);
 
     printf("Digite a população total: \n");
     scanf("%d", &Populacao1);
@@ -33,16 +33,17 @@ int main() {
     scanf("%f", &PIB1);
 
     printf("Digite o número de pontos turísticos: \n");
-    scanf("%d", &Turismo1);
+    scanf("%d", &Turismo1); 
+   
 
-    printf("Digite o Estado: \n");
+    printf("Digite o Estado:\n");
     scanf("%c", &Estado2);
 
     printf("Digite o Código da Carta: \n");
-    scanf("%s", &Carta2);
+    scanf("%s", Carta2);
 
     printf("Digite o Nome da Cidade: \n");
-    scanf("%s", &Cidade2);
+    scanf("%s", Cidade2);
 
     printf("Digite a população total: \n");
     scanf("%d", &Populacao2);
@@ -58,12 +59,14 @@ int main() {
    
     //impressão dos resultados no terminal
 
-    printf("Estado: %c \n - Código da Carta: %s \n ", Estado1, Carta1);
+    printf("Estado: %c \n ", Estado1);
+    printf("Código da Carta: %s \n ", Carta1);
     printf("Nome da Cidade: %s \n - População: %d \n", Cidade1, Populacao1);
     printf("Área por km: %f \n - PIB: %f \n", Area1, PIB1);
     printf("Pontos Turístico: %d \n", Turismo1);
 
-    printf("Estado: %c \n - Código da Carta: %s \n ", Estado2, Carta2);
+    printf("Estado: %c \n", Estado2);
+    printf("Código da Carta: %s \n ", Carta2);
     printf("Nome da Cidade: %s \n - População: %d \n", Cidade2, Populacao2);
     printf("Área por km: %f \n - PIB: %f \n", Area2, PIB2);
     printf("Pontos Turístico: %d \n", Turismo2);
